@@ -1,0 +1,217 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.error{
+    background-color: tomato;
+    padding: 1em;
+}
+.success{
+    background-color: lightgreen;
+    padding: 1em;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url("bus.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 100;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content form{
+    text-align: center;
+    background: #191919;
+    width: 300px;
+    margin-left: 40%;
+}
+
+
+  
+  
+  .content button{
+    border:0;
+    background: none;
+    
+    margin: 1.5em 0.5em;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 0.3em 1.4em;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .content button:hover{
+    background: #2ecc71;
+  }
+
+
+
+.content table{
+    color: #fff;
+    border: 1px solid rgb(238, 18, 18);
+    padding: 0 50%;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+    width: 80%;
+    border-collapse:collapse;
+    background-color: #32312f;
+    font-family: sans-serif;
+
+}
+.content table thead{
+    background-color: #ee2828;
+}
+
+.content table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.content table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.content table tbody tr td a{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #FF1046;
+    font-weight: medium;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+.content  a{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #494948;
+    font-weight: medium;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+button[type = "button"]{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.button[type = "button"] a{
+    color: #fff;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button[type = "button"]:hover span{
+    width: 100%;
+}
+button[type = "button"]:hover{
+    border: none;
+}
